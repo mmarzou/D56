@@ -9,4 +9,4 @@ class WeatherData {
 module.exports = WeatherData;
 
 const weather = new WeatherData(18, 65, 10);
-console.log("\n- ", weather)
+// console.log("\n- ", weather)

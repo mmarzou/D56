@@ -8,4 +8,4 @@ class City {
 module.exports = City;
 
 const city = new City('Lyon', 'France');
-console.log("\n- ", city);
+// console.log("\n- ", city);

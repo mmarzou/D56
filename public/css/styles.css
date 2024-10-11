@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+ul li, a{
+    display: inline;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #60dbae;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #49e3ab;
+}
+
+.nav {
+    background-color: #c2d8ef;
+    padding: 10px;
+    text-align: center;
+}
+.nav a {
+    color: #3c3636;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.nav a:hover {
+    color: #3c84d2;
+}
+
+#suggestions {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0; 
+    z-index: 1000;
+}
+#suggestions div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions div:hover {
+    background-color: #f0f0f0;
+}
+
+#weatherResult {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

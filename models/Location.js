@@ -15,4 +15,4 @@ const city = new City('Paris', 'France');
 const coordinates = new Coordinates(48.8566, 2.3522);
 const location = new Location('Eiffel Tower', coordinates, city);
 
-console.log(location);
+// console.log(location);
