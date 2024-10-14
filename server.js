@@ -1,17 +1,12 @@
 const express = require('express');
 const app = express();
-require('dotenv').config();
-
-// Serve static files
-app.use(express.static('public'));
-
-// Routes
 const landingPageRoute = require('./routes/landingPageRoute');
 const jsonRoute = require('./routes/jsonRoute');
 const xmlRoute = require('./routes/xmlRoute');
 const csvRoute = require('./routes/csvRoute');
 const locationWeatherRoute = require('./routes/locationWeatherRoute');
 
+app.use(express.static('public'));
 app.use('/', landingPageRoute);
 app.use('/json', jsonRoute);
 app.use('/xml', xmlRoute);
@@ -27,6 +22,7 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
+    console.log(`URL : -> http://localhost:${PORT}`);
 });
 
 module.exports = app;
